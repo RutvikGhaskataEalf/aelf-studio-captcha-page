@@ -22,7 +22,6 @@
         window.parent.postMessage({ recaptchaToken: token }, "*");
       }
       function onLoadError() {
-        const vscode = acquireVsCodeApi();
         window.parent.postMessage({ error: "Recaptcha failed to load." }, "*");
       }
     </script>
